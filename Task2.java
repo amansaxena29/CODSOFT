@@ -4,17 +4,17 @@ public class Task2 {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             System.out.print("Enter the Number of subjects: ");
-            int numSubj = sc.nextInt();
+            int n = sc.nextInt();
 
             int totalMarks = 0;
 
-            for (int i = 1; i <= numSubj; i++) {
+            for (int i = 1; i <= n; i++) {
                 System.out.print("Enter marks for subject " + i + ": ");
                 int marks = sc.nextInt();
                 totalMarks = totalMarks +  marks;
             }
 
-            double averagePercentage = (double) totalMarks / numSubj;
+            double averagePercentage = (double) totalMarks / n;
 
             System.out.println("Total Marks : " + totalMarks);
             System.out.println("Average Percentage : " + String.format("%.2f", averagePercentage) + "%");
